@@ -1,0 +1,37 @@
+
+body {
+ display: flex;
+ flex-direction: column;
+ background-color: #9ba8ab;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+   
+   }
+
+article {
+    flex: 2;
+    overflow-y: auto;
+
+}
+aside {
+flex: 1;
+overflow-y: auto;
+margin: 2px;
+padding-bottom: 2px;
+}
+
+.learners-table {
+background-color: #4a5c6a;
+width: 29%;
+border: black solid 2px;
+}
+
+h1 {
+    background-color: #546a7a;
+    
+    
+}
