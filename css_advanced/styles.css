@@ -200,3 +200,30 @@ a {
     width: 25px;
 }
 
+.MEMBERSHIP {
+    background: #0f1a2a;
+    padding: 80px 120px;
+    text-align: center;
+    color: white;
+}
+
+.MEMBERSHIP span {
+    color: #ba36ff;
+}
+
+.MEMBERSHIP .simple-card {
+    display: inline-block;
+    width: 180px;
+    margin: 20px;
+    text-align: center;
+}
+
+.simple-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.MEMBERSHIP .btn {
+    display: block;        
+    margin: 40px auto 0;  
+}
