@@ -242,3 +242,20 @@ section h2 {
 .small-card {
     width: 450px;
 }
+
+footer {
+    background: #0f1a2a;
+    color: white;
+    padding: 40px 120px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-images img {
+    width: 150px;
+}
+
+.container-footer-bottom {
+    margin-top: 20px;
+    opacity: .6;
+}
