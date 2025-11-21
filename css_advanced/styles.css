@@ -72,3 +72,43 @@ a {
     font-size: 15px;
 }
 
+.teachers {
+    background: #0f1a2a;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.teachers h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.teachers h2 span {
+    color: #ba36ff;
+}
+
+.teacher-list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.teacher-card {
+    text-align: center;
+}
+
+.teacher-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.teacher-card .info {
+    font-size: 13px;
+    opacity: .7;
+}
+
