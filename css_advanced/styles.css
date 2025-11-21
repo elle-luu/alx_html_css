@@ -227,3 +227,18 @@ a {
     display: block;        
     margin: 40px auto 0;  
 }
+
+section h2 {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.two-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.small-card {
+    width: 450px;
+}
