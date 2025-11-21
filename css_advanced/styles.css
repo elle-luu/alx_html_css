@@ -139,3 +139,64 @@ a {
     opacity: .8;
 }
 
+
+.tutorials {
+    padding: 60px 120px;
+    text-align: center;
+}
+
+.tutorials h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.tutorials span {
+    color: #ba36ff;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.feature-card {
+    position: relative;
+}
+
+.feature-card img:first-child {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-card img:nth-child(2) {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feature-card h4 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+/* Meta rows */
+.mini-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mini-card img {
+    width: 25px;
+}
+
