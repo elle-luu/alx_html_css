@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Myfonts';
+    src: url('fonts\SourceSansPro-Regular.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Myfonts', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar nav a {
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.banner {
+    height: 100vh;
+    background: 
+        url("Object.png") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.banner h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.banner .tagline {
+    margin-top: 20px;
+    letter-spacing: 10px;
+    font-size: 16px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ba36ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
