@@ -1,0 +1,317 @@
+@font-face {
+    font-family: Myfont-reg;
+    src: url(fonts/SourceSansPro-Regular.otf) format('truetype');
+}
+@font-face {
+    font-family: Myfont-bold;
+    src: url(fonts/SourceSansPro-Bold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: holberton-font;
+    src: url(holberton_school-icon/fonts/holberton_school-icon.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Myfont-reg;
+    
+}
+
+body {
+     color: #222;
+    line-height: 1.6;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.hero-header {
+    background: url(images/headphones_hero_1.jpg) center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    padding: 20px 60px;
+}
+.logo img{
+    width: 150px;
+    display: flex;
+    gap: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover, .nav-links a:active {
+    color: #FF6565; 
+}
+
+.hero-content {
+    max-width: 650px;
+    margin: 240px auto 0;
+    text-align: center;
+    
+}
+
+.subtext {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.CTA {
+    background: #FF6565;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.CTA:hover,
+.CTA:active {
+    opacity: 0.9; 
+}
+
+
+
+.section-light {
+    padding: 80px 0;
+    text-align: center;
+    font-family: holberton-font;
+}
+
+.section-desc {
+    margin: 20px auto 50px;
+    max-width: 600px;
+    font-size: 14px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.service i {
+    width: 60px;
+    margin-bottom: 15px;
+    color: #FF6565;
+   
+}
+
+.section-dark{
+     padding: 80px 0;
+    background: url(images/headphones_hero_2.jpg) center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.results-boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.box {
+    background: url(images/pentagone.png) center/cover no-repeat;
+   background-size: 170px;
+    width: 170px;
+    height: 170px;
+    padding-top: 35px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.box span {
+    font-size: 50px;
+    font-family:  Myfont-bold;
+    
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    padding: 5px;
+   
+}
+
+.footer {
+    background: #0e1a2b;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-logo img{
+    margin-right: 1000px;
+    width: 100px;
+}
+.socials  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin-right: 100px;
+    margin-top: -24px;
+    
+    
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: small;
+    padding: 40px;
+   
+}
+
+
+#what-we-do .container{
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#what-we-do .container:hover {
+    transform: scale(1.08) rotate(1.5deg);
+    opacity: 0.9;
+}
+
+#results .container{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+#results .container:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    display: none; /* hidden on desktop */
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* When hamburger is active (menu open) */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
+
+@media (max-width: 480px) {
+    
+
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+        transform: scale(0); 
+        transform-origin: top right;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+   
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* menu open animation */
+    .nav.open {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .nav-links {
+        display: none; /* hide desktop menu */
+    }
+
+    .services,
+    .results-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        margin-top: 70px;
+    }
+}
+
+
